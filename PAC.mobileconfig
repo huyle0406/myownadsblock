@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Global HTTP Proxy</string>
+			<key>PayloadDisplayName</key>
+			<string>Global HTTP Proxy</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.proxy.http.global.3E46645E-9271-11EA-BB37-0242AC130002</string>
+			<key>PayloadType</key>
+			<string>com.apple.proxy.http.global</string>
+			<key>PayloadUUID</key>
+			<string>3E46645E-9271-11EA-BB37-0242AC130002</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProxyCaptiveLoginAllowed</key>
+			<true/>
+			<key>ProxyPACFallbackAllowed</key>
+			<false/>
+			<key>ProxyPACURL</key>
+			<string>https://raw.githubusercontent.com/essandess/easylist-pac-privoxy/master/proxy.pac</string>
+			<key>ProxyType</key>
+			<string>Auto</string>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>myrestrictions</string>
+	<key>PayloadIdentifier</key>
+	<string>Huyle.local.3E4666A2-9271-11EA-BB37-0242AC130002</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>3e46679c-9271-11ea-bb37-0242ac130002</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
