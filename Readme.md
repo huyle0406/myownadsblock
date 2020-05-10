@@ -34,21 +34,32 @@ C3. Your mobile config should now be available here: https://YOUR_DOMAIN/PAC.mob
 Install your mobile config
 
 D1. Add repo https://repo.syns.me or https://repo.sukarodo.me and install iSupervisor. (Use Cydia)
+
 D2. Reboot your device or run Ldrestart. (If you skip this you will get an error)
+
 D3. Open the URL from #B5 or #C3 and install the profile.
+
 D4. To remove the notification at the top of your settings app saying "This device is supervised" uninstall iSupervisor using Cydia/Zebra/etc. If the notification is still there after uninstalling follow #D5 else skip to #D7.
+
 D5. Navigate to /var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles and open CloudConfigurationDetails.plist
+
 D6. Replace <key>IsSupervised</key><true/> with <key>IsSupervised</key><false/>
+
 D7. Reboot
-D8. ???
-D9. Profit
 Modify blocked ads and trackers
 
 E1. Go to your forked EasyList PAC Repo: https://github.com/YOUR_GITHUB_USERNAME/easylist-pac-privoxy
+
 E2. Open the file proxy.pac
+
 E3. Click on the pencil icon to start editing your file
+
 E4. Scroll to bad_da_host_JSON (currently on line #236)
+
 E5. Add your desired url to block on the next line (#237 for example) in this format "url.com": null,. Be careful to exactly format it as shown else you might break your proxy.pac file.
+
 E6. Add more (?)
+
 E7. To save your changes click on the green button "Commit changes".
+
 E8. Since your mobile config links to this file it will automatically block the newly added urls.
