@@ -58,8 +58,6 @@ E4. Scroll to bad_da_host_JSON (currently on line #236)
 
 E5. Add your desired url to block on the next line (#237 for example) in this format "url.com": null,. Be careful to exactly format it as shown else you might break your proxy.pac file.
 
-E6. Add more (?)
+E6. To save your changes click on the green button "Commit changes".
 
-E7. To save your changes click on the green button "Commit changes".
-
-E8. Since your mobile config links to this file it will automatically block the newly added urls.
+E7. Since your mobile config links to this file it will automatically block the newly added urls.
