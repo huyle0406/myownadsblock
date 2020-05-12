@@ -231,7 +231,7 @@ var good_da_host_exceptions_JSON = { "iad.apple.com": null,
 "www.bingads.microsoft.com": null };
 var good_da_host_exceptions_exact_flag = 39 > 0 ? true : false;  // test for non-zero number of rules
 
-// 1797 rules:
+// 1795 rules:
 var bad_da_host_JSON = { "ocsp.apple.com": null,
 "appldnld.apple.com": null,
 "gdmf.apple.com": null,
@@ -905,7 +905,6 @@ var bad_da_host_JSON = { "ocsp.apple.com": null,
 "beta.admicro.vn": null,
 "boxapp.admicro.vn": null,
 "c.logging.admicro.vn": null,
-"dev.email-analytics.admicro.vn": null,
 "dl.logging.admicro.vn": null,
 "dsprtb.logging.admicro.vn": null,
 "ea.logging.admicro.vn": null,
@@ -936,8 +935,6 @@ var bad_da_host_JSON = { "ocsp.apple.com": null,
 "redmine.admicro.vn": null,
 "sso.admicro.vn": null,
 "sspapi.admicro.vn": null,
-"tech.admicro.vn": null,
-"topkid.admicro.vn": null,
 "vccrm.admicro.vn": null,
 "admicro.vcmedia.com": null,
 "admicro1.vcmedia.vn": null,
