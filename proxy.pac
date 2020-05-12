@@ -231,11 +231,13 @@ var good_da_host_exceptions_JSON = { "iad.apple.com": null,
 "www.bingads.microsoft.com": null };
 var good_da_host_exceptions_exact_flag = 39 > 0 ? true : false;  // test for non-zero number of rules
 
-// 1798 rules:
+// 1800 rules:
 var bad_da_host_JSON = { "ocsp.apple.com": null,
 "appldnld.apple.com": null,
 "gdmf.apple.com": null,
 "mesu.apple.com": null,
+"cdn.adtrue.com": null,
+"track.adtrue.com": null,
 "adexchangeprediction.com": null,
 "static-trackers.adtarget.me": null,
 "b.codeonclick.com": null,
