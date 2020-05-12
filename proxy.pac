@@ -171,7 +171,7 @@ var good_da_host_JSON = { "apple.com": null,
 "microsoft.com": null,
 "mozilla.com": null,
 "mozilla.org": null };
-var good_da_host_exact_flag = 71 > 0 ? true : false;  // test for non-zero number of rules
+var good_da_host_exact_flag = 70 > 0 ? true : false;  // test for non-zero number of rules
     
 // 0 rules as an efficient NFA RegExp:
 var good_da_host_RegExp = /^$/;
@@ -2029,7 +2029,7 @@ var bad_da_host_JSON = { "ocsp.apple.com": null,
 "mavq.net": null,
 "serving-sys.com": null,
 "smartadserver.com": null,
-"quantserve.com": null,
+"quantserve.com": null };
 var bad_da_host_exact_flag = 1798 > 0 ? true : false;  // test for non-zero number of rules
     
 // 9 rules as an efficient NFA RegExp:
