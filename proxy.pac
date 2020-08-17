@@ -100,9 +100,8 @@ var blackhole = "PROXY " + blackhole_ip_port;
 // bad_da_host_exact == bad domain anchor with host/path type, exact matching with Object hash
 // bad_da_host_regex == bad domain anchor with host/path type, RegExp matching
 // 
-// 71 rules:
-var good_da_host_JSON = { "apple.com": null,
-"icloud.com": null,
+// 66 rules:
+var good_da_host_JSON = { "icloud.com": null,
 "apple-dns.net": null,
 "swcdn.apple.com": null,
 "init.itunes.apple.com": null,
@@ -119,8 +118,6 @@ var good_da_host_JSON = { "apple.com": null,
 "p32-ckdatabase.fe.apple-dns.net": null,
 "configuration.apple.com": null,
 "configuration.apple.com.edgekey.net": null,
-"mesu-cdn.apple.com.akadns.net": null,
-"mesu.g.aaplimg.com": null,
 "gspe1-ssl.ls.apple.com": null,
 "gspe1-ssl.ls.apple.com.edgekey.net": null,
 "api-glb-bos.smoot.apple.com": null,
@@ -171,7 +168,7 @@ var good_da_host_JSON = { "apple.com": null,
 "microsoft.com": null,
 "mozilla.com": null,
 "mozilla.org": null };
-var good_da_host_exact_flag = 70 > 0 ? true : false;  // test for non-zero number of rules
+var good_da_host_exact_flag = 66 > 0 ? true : false;  // test for non-zero number of rules
     
 // 0 rules as an efficient NFA RegExp:
 var good_da_host_RegExp = /^$/;
