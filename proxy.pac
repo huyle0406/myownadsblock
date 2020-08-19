@@ -2023,8 +2023,15 @@ var bad_da_host_JSON = { "ocsp.apple.com": null,
 "s.click.aliexpress.com": null,
 "xml.ad-maven.com": null,
 "a.r10.mopub.com": null,
+"ads24h.net": null,
+"control.kochava.com": null,
+"perf-events.cloud.unity3d.com": null,
+"config.uca.cloud.unity3d.com": null,
+"cdp.cloud.unity3d.com": null,
+"config.unityads.unity3d.com": null,
+"statistic.ads24h.net": null,
 "cms.quantserve.com": null };
-var bad_da_host_exact_flag = 1793 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 1801 > 0 ? true : false;  // test for non-zero number of rules
     
 // 6 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^(?:[\w-]+\.)*?(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|images\.(?=([\s\S]*?\.criteo\.net))\2|vix\.(?=([\s\S]*?\.criteo\.net))\3|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\4|rcm(?=([\s\S]*?\.amazon\.))\5|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\6)/i;
