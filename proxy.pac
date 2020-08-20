@@ -2030,6 +2030,8 @@ var bad_da_host_JSON = { "ocsp.apple.com": null,
 "cdp.cloud.unity3d.com": null,
 "config.unityads.unity3d.com": null,
 "statistic.ads24h.net": null,
+"ocsp-Ib.apple.com.akadns.net": null,
+"ocsp.g.aaplimg.com": null,
 "cms.quantserve.com": null };
 var bad_da_host_exact_flag = 1801 > 0 ? true : false;  // test for non-zero number of rules
     
