@@ -228,7 +228,7 @@ var good_da_host_exceptions_JSON = { "iad.apple.com": null,
 "www.bingads.microsoft.com": null };
 var good_da_host_exceptions_exact_flag = 39 > 0 ? true : false;  // test for non-zero number of rules
 
-// 1795 rules:
+// 1805 rules:
 var bad_da_host_JSON = { "ocsp.apple.com": null,
 "appldnld.apple.com": null,
 "gdmf.apple.com": null,
@@ -2032,8 +2032,10 @@ var bad_da_host_JSON = { "ocsp.apple.com": null,
 "statistic.ads24h.net": null,
 "ocsp-Ib.apple.com.akadns.net": null,
 "ocsp.g.aaplimg.com": null,
+"mobile.useinsider.com": null,
+"mobileimg.useinsider.com": null,
 "cms.quantserve.com": null };
-var bad_da_host_exact_flag = 1801 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 1805 > 0 ? true : false;  // test for non-zero number of rules
     
 // 6 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^(?:[\w-]+\.)*?(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|images\.(?=([\s\S]*?\.criteo\.net))\2|vix\.(?=([\s\S]*?\.criteo\.net))\3|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\4|rcm(?=([\s\S]*?\.amazon\.))\5|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\6)/i;
