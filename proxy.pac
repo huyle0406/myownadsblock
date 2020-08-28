@@ -228,7 +228,7 @@ var good_da_host_exceptions_JSON = { "iad.apple.com": null,
 "www.bingads.microsoft.com": null };
 var good_da_host_exceptions_exact_flag = 39 > 0 ? true : false;  // test for non-zero number of rules
 
-// 2291 rules:
+// 2286 rules:
 var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "10.afs.googleadservices.com": null,
 "10394-127.ampxchange.com": null,
@@ -771,7 +771,6 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "avd.innity.com": null,
 "avd.innity.net": null,
 "avn.innity.com": null,
-"b-graph.facebook.com": null,
 "b.codeonclick.com": null,
 "b.ensighten.com": null,
 "b.t.tailtarget.com": null,
@@ -982,7 +981,6 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "config.parsely.com": null,
 "config.uca.cloud.unity3d.com": null,
 "config.unityads.unity3d.com": null,
-"connect.facebook.com": null,
 "contehos.com": null,
 "content.ad20.net": null,
 "content.adriver.ru": null,
@@ -1304,8 +1302,6 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "googletagservices.net": null,
 "gr.doubleclick.net": null,
 "grand-prix.cityads.com": null,
-"graph.facebook.com": null,
-"graph.instagram.com": null,
 "gscounters.eu1.gigya.com": null,
 "gstaticadssl.l.google.com": null,
 "gt.doubleclick.net": null,
@@ -2520,7 +2516,7 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "zorkamarket.g2afse.com": null,
 "zplayer-trk.zdn.vn": null,
 "zplayer.trk.zapps.vn": null };
-var bad_da_host_exact_flag = 2291 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 2286 > 0 ? true : false;  // test for non-zero number of rules
     
 // 6 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^(?:[\w-]+\.)*?(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|images\.(?=([\s\S]*?\.criteo\.net))\2|vix\.(?=([\s\S]*?\.criteo\.net))\3|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\4|rcm(?=([\s\S]*?\.amazon\.))\5|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\6)/i;
