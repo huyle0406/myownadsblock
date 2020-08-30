@@ -1879,6 +1879,9 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "record.affiliatelounge.com": null,
 "recsys.aiservice.vn": null,
 "redir.bebi.com": null,
+"st.bebi.com": null,
+"bebi.com": null,
+"trck.bebi.com": null,
 "redir.jads.co": null,
 "redirect.com": null,
 "redirect.dable.io": null,
@@ -2510,7 +2513,7 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "zorkamarket.g2afse.com": null,
 "zplayer-trk.zdn.vn": null,
 "zplayer.trk.zapps.vn": null };
-var bad_da_host_exact_flag = 2281 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 2284 > 0 ? true : false;  // test for non-zero number of rules
     
 // 6 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^(?:[\w-]+\.)*?(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|images\.(?=([\s\S]*?\.criteo\.net))\2|vix\.(?=([\s\S]*?\.criteo\.net))\3|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\4|rcm(?=([\s\S]*?\.amazon\.))\5|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\6)/i;
