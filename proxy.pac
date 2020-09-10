@@ -2518,8 +2518,20 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "w.ladicdn.com": null,
 "api.forms.ladipage.com": null,
 "a.ladipage.com": null,
+"static.apester.com": null,
+"display.apester.com": null,
+"renderer.apester.com": null,
+"revboostprocdnadsprod.azureedge.net": null,
+"adncdnend.azureedge.net": null,
+"cdn.browsiprod.com": null,
+"events.streamrail.net": null,
+"ffcdn.streamrail.net": null,
+"ff.streamrail.net": null,
+"k.streamrail.com": null,
+"sdk.streamrail.com": null,
+"api.vidiom.net": null,
 "zplayer.trk.zapps.vn": null };
-var bad_da_host_exact_flag = 2290 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 2301 > 0 ? true : false;  // test for non-zero number of rules
     
 // 6 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^(?:[\w-]+\.)*?(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|images\.(?=([\s\S]*?\.criteo\.net))\2|vix\.(?=([\s\S]*?\.criteo\.net))\3|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\4|rcm(?=([\s\S]*?\.amazon\.))\5|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\6)/i;
