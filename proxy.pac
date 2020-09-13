@@ -1026,7 +1026,6 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "crowd.novaon.asia": null,
 "cs.exitmonitor.com": null,
 "csh.actiondesk.com": null,
-"csi.gstatic.com": null,
 "ct1.addthis.com": null,
 "customer.mangoads.vn": null,
 "cx.atdmt.com": null,
@@ -2065,10 +2064,7 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "srv.uk.znaptag.com": null,
 "ss.yomedia.vn": null,
 "sshowads.pubmatic.com": null,
-"ssl-google-analytics.l.google.com": null,
 "ssl.cdne.cpmstar.com": null,
-"ssl.csi.gstatic.com": null,
-"ssl.google-analytics.com": null,
 "ssl.ladipage.vn": null,
 "ssl.metric.gstatic.com": null,
 "ssl3.adhost.com": null,
@@ -2531,7 +2527,7 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "sdk.streamrail.com": null,
 "api.vidiom.net": null,
 "zplayer.trk.zapps.vn": null };
-var bad_da_host_exact_flag = 2301 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 2297 > 0 ? true : false;  // test for non-zero number of rules
     
 // 6 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^(?:[\w-]+\.)*?(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|images\.(?=([\s\S]*?\.criteo\.net))\2|vix\.(?=([\s\S]*?\.criteo\.net))\3|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\4|rcm(?=([\s\S]*?\.amazon\.))\5|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\6)/i;
