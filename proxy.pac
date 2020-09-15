@@ -2444,7 +2444,6 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "www.g.doubleclick.com": null,
 "www.google-analytics.com": null,
 "www.google-analytics.net": null,
-"www.googleadservices.com": null,
 "www.googletagservices.com": null,
 "www.i.matheranalytics.com": null,
 "www.ladipage.vn": null,
@@ -2525,7 +2524,7 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "sdk.streamrail.com": null,
 "api.vidiom.net": null,
 "zplayer.trk.zapps.vn": null };
-var bad_da_host_exact_flag = 2295 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 2294 > 0 ? true : false;  // test for non-zero number of rules
     
 // 6 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^(?:[\w-]+\.)*?(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|images\.(?=([\s\S]*?\.criteo\.net))\2|vix\.(?=([\s\S]*?\.criteo\.net))\3|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\4|rcm(?=([\s\S]*?\.amazon\.))\5|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\6)/i;
