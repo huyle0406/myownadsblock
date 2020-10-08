@@ -227,7 +227,7 @@ var good_da_host_exceptions_JSON = { "iad.apple.com": null,
 "www.bingads.microsoft.com": null };
 var good_da_host_exceptions_exact_flag = 39 > 0 ? true : false;  // test for non-zero number of rules
 
-// 2286 rules:
+// 2298 rules:
 var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "10.afs.googleadservices.com": null,
 "10394-127.ampxchange.com": null,
@@ -1497,7 +1497,6 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "local-media.m.ambient-platform.com": null,
 "log.adsplay.net": null,
 "log.adsplay.xyz": null,
-"log.api.zaloapp.com": null,
 "log.chartbeat.com": null,
 "log.mp3.zing.vn": null,
 "log.pinion.gg": null,
@@ -1731,7 +1730,6 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "optimize.3optimization.doubleclick.net": null,
 "optimize.adpushup.com": null,
 "optout.doubleclick.net": null,
-"org.zaloapp.ads.zdn.vn": null,
 "origin-c0.anthill.vn": null,
 "origin-e.anthill.vn": null,
 "origin-st-a.anthill.vn": null,
@@ -1859,7 +1857,6 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "push.yoads.net": null,
 "push2.yoads.net": null,
 "px.ads.linkedin.com": null,
-"px.za.zaloapp.com": null,
 "qadsm.doubleclick.net": null,
 "qc-static.coccoc.com": null,
 "qc.5giay.vn": null,
@@ -2036,8 +2033,6 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "sharefb.cnnd.vn": null,
 "sharks.vn": null,
 "shop-cdn.coccoc.com": null,
-"shop.zalo.me": null,
-"shop.zaloapp.com": null,
 "shopping.coccoc.com": null,
 "show.adzpower.com": null,
 "showads-jp.pubmatic.com": null,
@@ -2532,7 +2527,7 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "zorkamarket.g2afse.com": null,
 "zplayer-trk.zdn.vn": null,
 "zplayer.trk.zapps.vn": null };
-var bad_da_host_exact_flag = 2304 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 2298 > 0 ? true : false;  // test for non-zero number of rules
     
 // 6 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^(?:[\w-]+\.)*?(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|images\.(?=([\s\S]*?\.criteo\.net))\2|vix\.(?=([\s\S]*?\.criteo\.net))\3|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\4|rcm(?=([\s\S]*?\.amazon\.))\5|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\6)/i;
