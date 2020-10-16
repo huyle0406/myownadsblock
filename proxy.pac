@@ -227,7 +227,7 @@ var good_da_host_exceptions_JSON = { "iad.apple.com": null,
 "www.bingads.microsoft.com": null };
 var good_da_host_exceptions_exact_flag = 39 > 0 ? true : false;  // test for non-zero number of rules
 
-// 2302 rules:
+// 2311 rules:
 var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "data.flurry.com": null,
 "tpc.googlesyndication.com": null,
@@ -2540,7 +2540,7 @@ var bad_da_host_JSON = { "1.afs.googleadservices.com": null,
 "zorkamarket.g2afse.com": null,
 "zplayer-trk.zdn.vn": null,
 "zplayer.trk.zapps.vn": null };
-var bad_da_host_exact_flag = 2302 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 2311 > 0 ? true : false;  // test for non-zero number of rules
     
 // 6 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^(?:[\w-]+\.)*?(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|images\.(?=([\s\S]*?\.criteo\.net))\2|vix\.(?=([\s\S]*?\.criteo\.net))\3|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\4|rcm(?=([\s\S]*?\.amazon\.))\5|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\6)/i;
@@ -3109,7 +3109,6 @@ var GoodNetworks_Array = [ "10.0.0.0,     255.0.0.0",
 "172.16.0.0,        255.240.0.0",
 "192.168.0.0,       255.255.0.0",
 "127.0.0.0,         255.0.0.0",
-"17.0.0.0,          255.0.0.0",
 "23.2.8.68,         255.255.255.255",
 "23.2.145.78,       255.255.255.255",
 "23.39.179.17,      255.255.255.255",
