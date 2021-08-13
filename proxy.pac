@@ -232,8 +232,20 @@ var good_da_host_exceptions_JSON = { "iad.apple.com": null,
 "www.bingads.microsoft.com": null };
 var good_da_host_exceptions_exact_flag = 39 > 0 ? true : false;  // test for non-zero number of rules
 
-// 1902 rules:
-var bad_da_host_JSON = { "main.exoclick.com": null,
+// 1909 rules:
+var bad_da_host_JSON = { "pix.as.criteo.net": null,
+"csm.as.criteo.net": null,
+"ads.as.criteo.com": null,
+"static.criteo.net": null,
+"cas.criteo.com": null,
+"criteo.com": null,
+"criteo.net": null,
+"ads.viber.com": null,
+"ads-d.viber.com": null,
+"ads.aws.viber.com": null,
+"newad.ifeng.com": null,
+"etl.tindersparks.com": null,
+"main.exoclick.com": null,
 "syndication.exoclick.com": null,
 "main.exosrv.com": null,
 "ads.exoclick.com": null,
@@ -2130,13 +2142,8 @@ var bad_da_host_JSON = { "main.exoclick.com": null,
 "ucesreferre.club": null,
 "vongquaymienphi.net": null,
 "www.facebookz.co": null,
-"www.vongquaymienphi.net": null,
-"h6o2z0pwx5ja7dwxn0wx4fhv7mp0qoladm8vj6do4h1c6gja8evrn6g5fixk.me": null,
-"kz2oq0xm6ie7gn5dkswlpv6mfgci8yoe3xlqp12gjotp5fdjxs5ckztb8rzn.codes": null,
-"m6pz5h8qi18jq1s7hjkytxn7sjc0zpxw5gks3vyk8dcxs2cstjgdxkp7t1eb.me": null,
-"rei9jc56oyqux0rcpcquqmm7jc5freirpsquqkope3n3axrjacg8ipolxvbm.codes": null,
-"wfgo5vjs6cp0cdjx7bms3cn9lof2p01xho0pxgm1fd2fah3j5d8qd7x1d6eu.me": null };
-var bad_da_host_exact_flag = 1902 > 0 ? true : false;  // test for non-zero number of rules
+"www.vongquaymienphi.net": null };
+var bad_da_host_exact_flag = 1909 > 0 ? true : false;  // test for non-zero number of rules
     
 // 35 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /"(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|invenio_tracking_(?=([\s\S]*?\.sgnapps\.com))\2|mobileanalytics\.(?=([\s\S]*?\.amazonaws\.com))\3|ifengad\.(?=([\s\S]*?\.ifeng\.com))\4|imp(?=([\s\S]*?\.tradedoubler\.com))\5|rcm(?=([\s\S]*?\.amazon\.))\6|device\-metrics\-(?=([\s\S]*?\.amazon\.com))\7|metro\-trending\-(?=([\s\S]*?\.amazonaws\.com))\8|minero\-proxy\-(?=([\s\S]*?\.sh))\9|production\-adserver\-(?=([\s\S]*?\.amazonaws\.com))\10|adserver\.(?=([\s\S]*?\.yahoodns\.net))\11|rtbimp\-loadbalancer\-(?=([\s\S]*?\.amazonaws\.com))\12|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\13|s(?=([\s\S]*?\.site\.flashx\.))\14|metric(?=([\s\S]*?\.rediff\.com))\15|datacollect(?=([\s\S]*?\.abtasty\.com))\16|stats\-(?=([\s\S]*?\.p2pnow\.ru))\17|analytics\-beacon\-(?=([\s\S]*?\.amazonaws\.com))\18|log\-(?=([\s\S]*?\.previewnetworks\.com))\19|ad(?=([\s\S]*?\.nexage\.com))\20|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\21|mediate\-ios\-(?=([\s\S]*?\.hyprmx\.com))\22|log(?=([\s\S]*?\.ku6\.com))\23|api(?=([\s\S]*?\.batmobil\.net))\24|banners(?=([\s\S]*?\.spacash\.com))\25|stats2\.(?=([\s\S]*?\.fdnames\.com))\26|sextronix\.(?=([\s\S]*?\.cdnaccess\.com))\27|flurry\.agentportal\-(?=([\s\S]*?\.yahoodns\.net))\28|flurry\.agentportal\.(?=([\s\S]*?\.yahoodns\.net))\29|collector\-(?=([\s\S]*?\.tvsquared\.com))\30|report(?=([\s\S]*?\.appmetrica\.webvisor\.com))\31|trk(?=([\s\S]*?\.vidible\.tv))\32|api(?=([\s\S]*?\.batmobi\.net))\33|logger\-(?=([\s\S]*?\.dailymotion\.com))\34|images\.(?=([\s\S]*?\.criteo\.net))\35)/i;
