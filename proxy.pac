@@ -1533,7 +1533,7 @@ var bad_da_host_JSON = { "1126bet.com": null,
 "zo.game": null,
 "zone.uniad.vn": null,
 "zowinvn.vip": null,
-"zplayer-trk.zdn.vn": null,
+"logging.admicro.vn": null,
 "static-ssl.exoclick.com": null,
 "main.exosrv.com": null,
 "ads.exosrv.com": null,
@@ -1543,7 +1543,7 @@ var bad_da_host_JSON = { "1126bet.com": null,
 "s10.histats.com": null,
 "ad.ezmob.com": null,
 "xml.ezmob.com": null,
-"zplayer.trk.zapps.vn": null };
+"api.dable.io": null };
 var bad_da_host_exact_flag = 1325 > 0 ? true : false;  // test for non-zero number of rules
     
 // 35 rules as an efficient NFA RegExp:
