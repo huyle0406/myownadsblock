@@ -1,10 +1,7 @@
 // If you normally use a proxy, replace "DIRECT" below with
 // "PROXY MACHINE:PORT"
 // where MACHINE is the IP address or host name of your proxy
-// server and PORT is the port number of your proxy server.
-//
-// Influenced in part by code from King of the PAC from http://securemecca.com/pac.html
-
+// server and PORT is the port number of your proxy 
 // Define the blackhole proxy for blocked adware and trackware
 
 var normal = "DIRECT";
@@ -352,7 +349,6 @@ var bad_da_host_JSON = { "1126bet.com": null,
 "ads.contextweb.com": null,
 "ads.exdynsrv.com": null,
 "ads.exosrv.com": null,
-"ads.facebook.com": null,
 "ads.fptplay.net.vn": null,
 "ads.glispa.com": null,
 "ads.google.com": null,
@@ -947,7 +943,6 @@ var bad_da_host_JSON = { "1126bet.com": null,
 "logservice.hicloud.com": null,
 "logservice1.hicloud.com": null,
 "c.adskeeper.co.uk": null,
-"lookaside.facebook.com": null,
 "lottery.vntoday.news": null,
 "lucklayed.info": null,
 "lucky88.com": null,
@@ -1003,7 +998,7 @@ var bad_da_host_JSON = { "1126bet.com": null,
 "metrics2.data.hicloud.com": null,
 "metrics3.data.hicloud.com": null,
 "metrics4.data.hicloud.com": null,
-"metrics5.data.hicloud.com ": null,
+"metrics5.data.hicloud.com": null,
 "metrika.yandex.ru": null,
 "mibet.com": null,
 "mibet.mobi": null,
@@ -1536,7 +1531,7 @@ var bad_da_host_JSON = { "1126bet.com": null,
 "ad.ezmob.com": null,
 "xml.ezmob.com": null,
 "api.dable.io": null };
-var bad_da_host_exact_flag = 1326 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 1324 > 0 ? true : false;  // test for non-zero number of rules
     
 // 35 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /"(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|invenio_tracking_(?=([\s\S]*?\.sgnapps\.com))\2|mobileanalytics\.(?=([\s\S]*?\.amazonaws\.com))\3|ifengad\.(?=([\s\S]*?\.ifeng\.com))\4|imp(?=([\s\S]*?\.tradedoubler\.com))\5|rcm(?=([\s\S]*?\.amazon\.))\6|device\-metrics\-(?=([\s\S]*?\.amazon\.com))\7|metro\-trending\-(?=([\s\S]*?\.amazonaws\.com))\8|minero\-proxy\-(?=([\s\S]*?\.sh))\9|production\-adserver\-(?=([\s\S]*?\.amazonaws\.com))\10|adserver\.(?=([\s\S]*?\.yahoodns\.net))\11|rtbimp\-loadbalancer\-(?=([\s\S]*?\.amazonaws\.com))\12|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\13|s(?=([\s\S]*?\.site\.flashx\.))\14|metric(?=([\s\S]*?\.rediff\.com))\15|datacollect(?=([\s\S]*?\.abtasty\.com))\16|stats\-(?=([\s\S]*?\.p2pnow\.ru))\17|analytics\-beacon\-(?=([\s\S]*?\.amazonaws\.com))\18|log\-(?=([\s\S]*?\.previewnetworks\.com))\19|ad(?=([\s\S]*?\.nexage\.com))\20|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\21|mediate\-ios\-(?=([\s\S]*?\.hyprmx\.com))\22|log(?=([\s\S]*?\.ku6\.com))\23|api(?=([\s\S]*?\.batmobil\.net))\24|banners(?=([\s\S]*?\.spacash\.com))\25|stats2\.(?=([\s\S]*?\.fdnames\.com))\26|sextronix\.(?=([\s\S]*?\.cdnaccess\.com))\27|flurry\.agentportal\-(?=([\s\S]*?\.yahoodns\.net))\28|flurry\.agentportal\.(?=([\s\S]*?\.yahoodns\.net))\29|collector\-(?=([\s\S]*?\.tvsquared\.com))\30|report(?=([\s\S]*?\.appmetrica\.webvisor\.com))\31|trk(?=([\s\S]*?\.vidible\.tv))\32|api(?=([\s\S]*?\.batmobi\.net))\33|logger\-(?=([\s\S]*?\.dailymotion\.com))\34|images\.(?=([\s\S]*?\.criteo\.net))\35)/i;
