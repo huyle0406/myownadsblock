@@ -1612,6 +1612,46 @@ var good_url_regex_flag = 0 > 0 ? true : false;  // test for non-zero number of 
 var bad_url_RegExp = /^$/;
 var bad_url_regex_flag = 0 > 0 ? true : false;  // test for non-zero number of rules
 
+// Add any good networks here. Format is network folowed by a comma and
+// optional white space, and then the netmask.
+// LAN, loopback, Apple (direct and Akamai e.g. e4805.a.akamaiedge.net), Microsoft (updates and services)
+var GoodNetworks_Array = [ "10.0.0.0,     255.0.0.0",
+"172.16.0.0,        255.240.0.0",
+"192.168.0.0,       255.255.0.0",
+"127.0.0.0,         255.0.0.0",
+"17.0.0.0,          255.0.0.0",
+"23.2.8.68,         255.255.255.255",
+"23.2.145.78,       255.255.255.255",
+"23.39.179.17,      255.255.255.255",
+"23.63.98.0,        255.255.254.0",
+"104.70.71.223,     255.255.255.255",
+"104.73.77.224,     255.255.255.255",
+"104.96.184.235,    255.255.255.255",
+"104.96.188.194,    255.255.255.255",
+"65.52.0.0,         255.255.252.0" ];
+
+// Apple iAd, Microsoft telemetry
+var GoodNetworks_Exceptions_Array = [ "17.172.28.11,     255.255.255.255",
+"134.170.30.202,    255.255.255.255",
+"137.116.81.24,     255.255.255.255",
+"157.56.106.189,    255.255.255.255",
+"184.86.53.99,      255.255.255.255",
+"2.22.61.43,        255.255.255.255",
+"2.22.61.66,        255.255.255.255",
+"204.79.197.200,    255.255.255.255",
+"23.218.212.69,     255.255.255.255",
+"65.39.117.230,     255.255.255.255",
+"65.52.108.33,      255.255.255.255",
+"65.55.108.23,      255.255.255.255",
+"64.4.54.254,       255.255.255.255" ];
+
+// Akamai: 23.64.0.0/14, 23.0.0.0/12, 23.32.0.0/11, 104.64.0.0/10
+
+// Add any bad networks here. Format is network folowed by a comma and
+// optional white space, and then the netmask.
+// From securemecca.com: Adobe marketing cloud, 2o7, omtrdc, Sedo domain parking, flyingcroc, accretive
+var BadNetworks_Array = [ "207.66.128.0,   255.255.128.0" ];
+
 // block these schemes; use the command line for ftp, rsync, etc. instead
 var bad_schemes_RegExp = RegExp("^(?:ftp|sftp|tftp|ftp-data|rsync|finger|gopher)", "i")
 
