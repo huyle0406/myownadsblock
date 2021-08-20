@@ -93,7 +93,6 @@ var good_da_host_JSON = { "apple.com": null,
 "p32-ckdatabase.fe.apple-dns.net": null,
 "configuration.apple.com": null,
 "configuration.apple.com.edgekey.net": null,
-"mesu.apple.com": null,
 "mesu-cdn.apple.com.akadns.net": null,
 "mesu.g.aaplimg.com": null,
 "gspe1-ssl.ls.apple.com": null,
@@ -146,7 +145,7 @@ var good_da_host_JSON = { "apple.com": null,
 "microsoft.com": null,
 "mozilla.com": null,
 "mozilla.org": null };
-var good_da_host_exact_flag = 71 > 0 ? true : false;  // test for non-zero number of rules
+var good_da_host_exact_flag = 70 > 0 ? true : false;  // test for non-zero number of rules
     
 // 0 rules as an efficient NFA RegExp:
 var good_da_host_RegExp = /^$/;
@@ -207,7 +206,9 @@ var good_da_host_exceptions_JSON = { "iad.apple.com": null,
 var good_da_host_exceptions_exact_flag = 39 > 0 ? true : false;  // test for non-zero number of rules
 
 // 1326 rules:
-var bad_da_host_JSON = { "1126bet.com": null,
+var bad_da_host_JSON = { "mesu.apple.com": null,
+"ocsp.apple.com": null,
+"1126bet.com": null,
 "11bet.com": null,
 "11bet.net": null,
 "11bet.win": null,
@@ -509,7 +510,7 @@ var bad_da_host_JSON = { "1126bet.com": null,
 "ants.vn": null,
 "anymind360-com.cdn.ampproject.org": null,
 "ap.lijit.com": null,
-"api-v5.cercube.com": null,
+"inmobi.net": null,
 "api.ad.xiaomi.com": null,
 "api.adserver.vrizead.com": null,
 "api.adsnative.com": null,
@@ -1544,8 +1545,40 @@ var bad_da_host_JSON = { "1126bet.com": null,
 "promo.propellerads.com": null,
 "publishers.propellerads.com": null,
 "tracking.propellerads.com": null,
-"api.dable.io": null };
-var bad_da_host_exact_flag = 1338 > 0 ? true : false;  // test for non-zero number of rules
+"alldcs.outbrain.com": null,
+"amplify.outbrain.com": null,
+"amplify-imp.outbrain.com": null,
+"amplifypixel.outbrain.com": null,
+"chi.outbrain.com": null,
+"hpr.outbrain.com": null,
+"images.outbrain.com": null,
+"libs.outbrain.com": null,
+"mcdp-chidc2.outbrain.com": null,
+"mcdp-nydc1.outbrain.com": null,
+"mcdp-sadc1.outbrain.com": null,
+"mv.outbrain.com": null,
+"ny.outbrain.com": null,
+"odb.outbrain.com": null,
+"revee.outbrain.com": null,
+"sa.outbrain.com": null,
+"stas.outbrain.com": null,
+"sync.outbrain.com": null,
+"vastcdn.outbrain.com": null,
+"videoclientsservicescalls.outbrain.com": null,
+"videoevents.outbrain.com": null,
+"vrt.outbrain.com": null,
+"widget-pixels.outbrain.com": null,
+"widgetmonitor.outbrain.com": null,
+"widgets.outbrain.com": null,
+"api.dable.io": null,
+"cdn.onthe.io": null,
+"v7.cdn.onthe.io": null,
+"as.v7.cdn.onthe.io": null,
+"na.v7.cdn.onthe.io": null,
+"i.onthe.io": null,
+"tt.onthe.io": null,
+"ttt.onthe.io": null };
+var bad_da_host_exact_flag = 1372 > 0 ? true : false;  // test for non-zero number of rules
     
 // 35 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /"(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|invenio_tracking_(?=([\s\S]*?\.sgnapps\.com))\2|mobileanalytics\.(?=([\s\S]*?\.amazonaws\.com))\3|ifengad\.(?=([\s\S]*?\.ifeng\.com))\4|imp(?=([\s\S]*?\.tradedoubler\.com))\5|rcm(?=([\s\S]*?\.amazon\.))\6|device\-metrics\-(?=([\s\S]*?\.amazon\.com))\7|metro\-trending\-(?=([\s\S]*?\.amazonaws\.com))\8|minero\-proxy\-(?=([\s\S]*?\.sh))\9|production\-adserver\-(?=([\s\S]*?\.amazonaws\.com))\10|adserver\.(?=([\s\S]*?\.yahoodns\.net))\11|rtbimp\-loadbalancer\-(?=([\s\S]*?\.amazonaws\.com))\12|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\13|s(?=([\s\S]*?\.site\.flashx\.))\14|metric(?=([\s\S]*?\.rediff\.com))\15|datacollect(?=([\s\S]*?\.abtasty\.com))\16|stats\-(?=([\s\S]*?\.p2pnow\.ru))\17|analytics\-beacon\-(?=([\s\S]*?\.amazonaws\.com))\18|log\-(?=([\s\S]*?\.previewnetworks\.com))\19|ad(?=([\s\S]*?\.nexage\.com))\20|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\21|mediate\-ios\-(?=([\s\S]*?\.hyprmx\.com))\22|log(?=([\s\S]*?\.ku6\.com))\23|api(?=([\s\S]*?\.batmobil\.net))\24|banners(?=([\s\S]*?\.spacash\.com))\25|stats2\.(?=([\s\S]*?\.fdnames\.com))\26|sextronix\.(?=([\s\S]*?\.cdnaccess\.com))\27|flurry\.agentportal\-(?=([\s\S]*?\.yahoodns\.net))\28|flurry\.agentportal\.(?=([\s\S]*?\.yahoodns\.net))\29|collector\-(?=([\s\S]*?\.tvsquared\.com))\30|report(?=([\s\S]*?\.appmetrica\.webvisor\.com))\31|trk(?=([\s\S]*?\.vidible\.tv))\32|api(?=([\s\S]*?\.batmobi\.net))\33|logger\-(?=([\s\S]*?\.dailymotion\.com))\34|images\.(?=([\s\S]*?\.criteo\.net))\35)/i;
@@ -1578,61 +1611,6 @@ var good_url_regex_flag = 0 > 0 ? true : false;  // test for non-zero number of 
 // 0 rules as an efficient NFA RegExp:
 var bad_url_RegExp = /^$/;
 var bad_url_regex_flag = 0 > 0 ? true : false;  // test for non-zero number of rules
-
-// Add any good networks here. Format is network folowed by a comma and
-// optional white space, and then the netmask.
-// LAN, loopback, Apple (direct and Akamai e.g. e4805.a.akamaiedge.net), Microsoft (updates and services)
-var GoodNetworks_Array = [ "10.0.0.0,     255.0.0.0",
-"172.16.0.0,        255.240.0.0",
-"192.168.0.0,       255.255.0.0",
-"127.0.0.0,         255.0.0.0",
-"17.0.0.0,          255.0.0.0",
-"23.2.8.68,         255.255.255.255",
-"23.2.145.78,       255.255.255.255",
-"23.39.179.17,      255.255.255.255",
-"23.63.98.0,        255.255.254.0",
-"104.70.71.223,     255.255.255.255",
-"104.73.77.224,     255.255.255.255",
-"104.96.184.235,    255.255.255.255",
-"104.96.188.194,    255.255.255.255",
-"65.52.0.0,         255.255.252.0" ];
-
-// Apple iAd, Microsoft telemetry
-var GoodNetworks_Exceptions_Array = [ "17.172.28.11,     255.255.255.255",
-"134.170.30.202,    255.255.255.255",
-"137.116.81.24,     255.255.255.255",
-"157.56.106.189,    255.255.255.255",
-"184.86.53.99,      255.255.255.255",
-"2.22.61.43,        255.255.255.255",
-"2.22.61.66,        255.255.255.255",
-"204.79.197.200,    255.255.255.255",
-"23.218.212.69,     255.255.255.255",
-"65.39.117.230,     255.255.255.255",
-"65.52.108.33,      255.255.255.255",
-"65.55.108.23,      255.255.255.255",
-"64.4.54.254,       255.255.255.255" ];
-
-// Akamai: 23.64.0.0/14, 23.0.0.0/12, 23.32.0.0/11, 104.64.0.0/10
-
-// Add any bad networks here. Format is network folowed by a comma and
-// optional white space, and then the netmask.
-// From securemecca.com: Adobe marketing cloud, 2o7, omtrdc, Sedo domain parking, flyingcroc, accretive
-var BadNetworks_Array = [ "61.139.105.128,    255.255.255.192",
-"63.140.35.160,  255.255.255.248",
-"63.140.35.168,  255.255.255.252",
-"63.140.35.172,  255.255.255.254",
-"63.140.35.174,  255.255.255.255",
-"66.150.161.32,  255.255.255.224",
-"66.235.138.0,   255.255.254.0",
-"66.235.141.0,   255.255.255.0",
-"66.235.143.48,  255.255.255.254",
-"66.235.143.64,  255.255.255.254",
-"66.235.153.16,  255.255.255.240",
-"66.235.153.32,  255.255.255.248",
-"81.31.38.0,     255.255.255.128",
-"82.98.86.0,     255.255.255.0",
-"89.185.224.0,   255.255.224.0",
-"207.66.128.0,   255.255.128.0" ];
 
 // block these schemes; use the command line for ftp, rsync, etc. instead
 var bad_schemes_RegExp = RegExp("^(?:ftp|sftp|tftp|ftp-data|rsync|finger|gopher)", "i")
