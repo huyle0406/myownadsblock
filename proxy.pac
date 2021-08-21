@@ -22,14 +22,6 @@ var blackhole = "PROXY " + blackhole_ip_port;
 
 // Create object hashes or compile efficient NFA's from all filters
 // Various alternate filtering and regex approaches were timed using node and at jsperf.com
-
-// Too many rules (>~ 10k) bog down the browser; make reasonable exclusions here:
-
-// EasyList rules:
-// https://adblockplus.org/filters
-// https://adblockplus.org/filter-cheatsheet
-// https://opnsrce.github.io/javascript-performance-tip-precompile-your-regular-expressions
-// https://adblockplus.org/blog/investigating-filter-matching-algorithms
 // 
 // Strategies to convert EasyList rules to Javascript tests:
 // 
@@ -1390,7 +1382,7 @@ var bad_da_host_JSON = { "mesu.apple.com": null,
 "tracking.vietnamnetad.vn": null,
 "trackingapi.foody.vn": null,
 "bcp.crwdcntrl.net": null,
-"trackity.tiki.vn": null,
+"onaudience.com": null,
 "trck.bebi.com": null,
 "trenddigital.vn": null,
 "trending.vn": null,
@@ -1591,8 +1583,18 @@ var bad_da_host_JSON = { "mesu.apple.com": null,
 "go.xxxjmp.com": null,
 "cdn.pncloudfl.com": null,
 "cdnp.ad-stir.com": null,
+"juryinvolving.com": null,
+"my.rtmark.net": null,
+"campjupiterjul.com": null,
+"ancientsend.com": null,
+"alcoholicsort.com": null,
+"api6.storeip-mangun.io": null,
+"qos-talk.123c.vn": null,
+"cdn.pncloudfl.com.cdn.cloudflare.net": null,
+"offerimage.com": null,
+"pseepsie.com": null,
 "ttt.onthe.io": null };
-var bad_da_host_exact_flag = 1386 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 1396 > 0 ? true : false;  // test for non-zero number of rules
     
 // 35 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /"(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|invenio_tracking_(?=([\s\S]*?\.sgnapps\.com))\2|mobileanalytics\.(?=([\s\S]*?\.amazonaws\.com))\3|ifengad\.(?=([\s\S]*?\.ifeng\.com))\4|imp(?=([\s\S]*?\.tradedoubler\.com))\5|rcm(?=([\s\S]*?\.amazon\.))\6|device\-metrics\-(?=([\s\S]*?\.amazon\.com))\7|metro\-trending\-(?=([\s\S]*?\.amazonaws\.com))\8|minero\-proxy\-(?=([\s\S]*?\.sh))\9|production\-adserver\-(?=([\s\S]*?\.amazonaws\.com))\10|adserver\.(?=([\s\S]*?\.yahoodns\.net))\11|rtbimp\-loadbalancer\-(?=([\s\S]*?\.amazonaws\.com))\12|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\13|s(?=([\s\S]*?\.site\.flashx\.))\14|metric(?=([\s\S]*?\.rediff\.com))\15|datacollect(?=([\s\S]*?\.abtasty\.com))\16|stats\-(?=([\s\S]*?\.p2pnow\.ru))\17|analytics\-beacon\-(?=([\s\S]*?\.amazonaws\.com))\18|log\-(?=([\s\S]*?\.previewnetworks\.com))\19|ad(?=([\s\S]*?\.nexage\.com))\20|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\21|mediate\-ios\-(?=([\s\S]*?\.hyprmx\.com))\22|log(?=([\s\S]*?\.ku6\.com))\23|api(?=([\s\S]*?\.batmobil\.net))\24|banners(?=([\s\S]*?\.spacash\.com))\25|stats2\.(?=([\s\S]*?\.fdnames\.com))\26|sextronix\.(?=([\s\S]*?\.cdnaccess\.com))\27|flurry\.agentportal\-(?=([\s\S]*?\.yahoodns\.net))\28|flurry\.agentportal\.(?=([\s\S]*?\.yahoodns\.net))\29|collector\-(?=([\s\S]*?\.tvsquared\.com))\30|report(?=([\s\S]*?\.appmetrica\.webvisor\.com))\31|trk(?=([\s\S]*?\.vidible\.tv))\32|api(?=([\s\S]*?\.batmobi\.net))\33|logger\-(?=([\s\S]*?\.dailymotion\.com))\34|images\.(?=([\s\S]*?\.criteo\.net))\35)/i;
