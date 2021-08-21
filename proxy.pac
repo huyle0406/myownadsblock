@@ -1577,8 +1577,20 @@ var bad_da_host_JSON = { "mesu.apple.com": null,
 "na.v7.cdn.onthe.io": null,
 "i.onthe.io": null,
 "tt.onthe.io": null,
+"run-syndicate.com": null,
+"cdn.run-syndicate.com.fpbns.net": null,
+"pixel.runative-syndicate.com": null,
+"cdn.run-syndicate.com": null,
+"syndication.realsrv.com": null,
+"realsrv.com": null,
+"cdn.livechatinc.com": null,
+"metrics.bangbros.com": null,
+"tour.bangbros.com": null,
+"twinrdsrv.com": null,
+"stelagharris.com": null,
+"go.xxxjmp.com": null,
 "ttt.onthe.io": null };
-var bad_da_host_exact_flag = 1372 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 1384 > 0 ? true : false;  // test for non-zero number of rules
     
 // 35 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /"(?:tracking(?=([\s\S]*?\.euroads\.fi))\1|invenio_tracking_(?=([\s\S]*?\.sgnapps\.com))\2|mobileanalytics\.(?=([\s\S]*?\.amazonaws\.com))\3|ifengad\.(?=([\s\S]*?\.ifeng\.com))\4|imp(?=([\s\S]*?\.tradedoubler\.com))\5|rcm(?=([\s\S]*?\.amazon\.))\6|device\-metrics\-(?=([\s\S]*?\.amazon\.com))\7|metro\-trending\-(?=([\s\S]*?\.amazonaws\.com))\8|minero\-proxy\-(?=([\s\S]*?\.sh))\9|production\-adserver\-(?=([\s\S]*?\.amazonaws\.com))\10|adserver\.(?=([\s\S]*?\.yahoodns\.net))\11|rtbimp\-loadbalancer\-(?=([\s\S]*?\.amazonaws\.com))\12|vtnlog\-(?=([\s\S]*?\.elb\.amazonaws\.com))\13|s(?=([\s\S]*?\.site\.flashx\.))\14|metric(?=([\s\S]*?\.rediff\.com))\15|datacollect(?=([\s\S]*?\.abtasty\.com))\16|stats\-(?=([\s\S]*?\.p2pnow\.ru))\17|analytics\-beacon\-(?=([\s\S]*?\.amazonaws\.com))\18|log\-(?=([\s\S]*?\.previewnetworks\.com))\19|ad(?=([\s\S]*?\.nexage\.com))\20|collector\-(?=([\s\S]*?\.elb\.amazonaws\.com))\21|mediate\-ios\-(?=([\s\S]*?\.hyprmx\.com))\22|log(?=([\s\S]*?\.ku6\.com))\23|api(?=([\s\S]*?\.batmobil\.net))\24|banners(?=([\s\S]*?\.spacash\.com))\25|stats2\.(?=([\s\S]*?\.fdnames\.com))\26|sextronix\.(?=([\s\S]*?\.cdnaccess\.com))\27|flurry\.agentportal\-(?=([\s\S]*?\.yahoodns\.net))\28|flurry\.agentportal\.(?=([\s\S]*?\.yahoodns\.net))\29|collector\-(?=([\s\S]*?\.tvsquared\.com))\30|report(?=([\s\S]*?\.appmetrica\.webvisor\.com))\31|trk(?=([\s\S]*?\.vidible\.tv))\32|api(?=([\s\S]*?\.batmobi\.net))\33|logger\-(?=([\s\S]*?\.dailymotion\.com))\34|images\.(?=([\s\S]*?\.criteo\.net))\35)/i;
