@@ -1959,7 +1959,7 @@ var bad_da_host_JSON = { "rtbproxy.mgid.com": null,
 "gameanalytics.com": null,
 "api.gameanalytics.com": null,
 "zres.alicdn.com.w.cdngslb.com": null };
-var bad_da_host_exact_flag = 1764 > 0 ? true : false;  // test for non-zero number of rules
+var bad_da_host_exact_flag = 1761 > 0 ? true : false;  // test for non-zero number of rules
     
 // 0 rules as an efficient NFA RegExp:
 var bad_da_host_RegExp = /^$/;
