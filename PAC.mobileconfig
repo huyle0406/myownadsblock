@@ -18,7 +18,7 @@
 			<key>ProxyCaptiveLoginAllowed</key>
 			<true/>
 			<key>ProxyPACURL</key>
-			<string>https://gitlab.com/huyle0406/myadblock/-/raw/main/proxy.pac</string>
+			<string>https://raw.githubusercontent.com/huyle0406/myownadsblock/master/proxy.pac</string>
 			<key>ProxyType</key>
 			<string>Auto</string>
 		</dict>
