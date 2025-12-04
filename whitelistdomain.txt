@@ -111,6 +111,12 @@ video.xx.fbcdn.net
 external-ort2-1.xx.fbcdn.net
 scontent-ort2-1.xx.fbcdn.net
 edge-chat.facebook.com
+cscpdl.com
+cscvdl.com
+cscvdlz.com
+social-dl-z.com
+social-dl.com
+cscfdl.com
 scontent-mia3-1.xx.fbcdn.net
 web.facebook.com
 rupload.facebook.com l.messenger.com
